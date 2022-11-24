@@ -18,7 +18,7 @@
 
 import { MongoClient } from "mongodb";
 
-const DB_URI = process.env.DB_URI || "mongodb+srv://sagademo:sagademo123@cluster0.a1if5wm.mongodb.net/Transits?retryWrites=true&w=majority";
+const DB_URI = process.env.DB_URI || "mongodb+srv://{USER}:{PWD}@{DB_HOST}/Transits?retryWrites=true&w=majority";
 const COLLECTION = process.env.COLLECTION || "Transits";
 
 const dbClient = new MongoClient(DB_URI);
