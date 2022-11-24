@@ -6,7 +6,7 @@
     "timeout": "300s",
     "availableMemoryMb": "128",
     "environmentVariables": {
-        "DB_URI": "mongodb+srv://sagademo:sagademo123@cluster0.a1if5wm.mongodb.net/Transits?retryWrites=true&w=majority",
+        "DB_URI": "mongodb+srv://{USER}:{PWD}@{HOST}/Transits?retryWrites=true&w=majority",
         "COLLECTION": "Transits"
     },
     "ingressSettings": "ALLOW_ALL",
