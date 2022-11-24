@@ -1,0 +1,16 @@
+{
+    "name": "projects/alert-ground-366317/locations/asia-east2/functions/reservations",
+    "description": "<description>",
+    "entryPoint": "main",
+    "runtime": "nodejs16",
+    "timeout": "300s",
+    "availableMemoryMb": "128",
+    "environmentVariables": {
+        "BOOKINGS_TOPIC": "bookings",
+        "EVENT_DATA_COLLECTION": "reservations",
+        "TRANSITS_API": "https://{REGION}-{PROJECT_NAME}.cloudfunctions.net/transits"
+    },
+    "ingressSettings": "ALLOW_ALL",
+    "sourceArchiveUrl": "",
+    "httpsTrigger": {}
+}

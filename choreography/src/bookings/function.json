@@ -1,0 +1,20 @@
+{
+    "name": "projects/alert-ground-366317/locations/asia-east2/functions/bookings",
+    "description": "<description>",
+    "entryPoint": "main",
+    "runtime": "nodejs16",
+    "timeout": "300s",
+    "availableMemoryMb": "128",
+    "environmentVariables": {
+        "EVENT_DATA_COLLECTION": "bookings",
+        "PAYMENTS_TOPIC": "reservations.payments",
+        "RESERVATION_CANCELLATIONS_TOPIC": "reservations.reservationCancellations",
+        "TRANSITS_API": "https://{REGION}-{PROJECT_NAME}.cloudfunctions.net/transits"
+    },
+    "ingressSettings": "ALLOW_INTERNAL_ONLY",
+    "sourceArchiveUrl": "",
+    "eventTrigger": {
+        "eventType": "providers/cloud.pubsub/eventTypes/topic.publish",
+        "resource": "projects/{GCLOUD_PROJECT_ID}/topics/reservations.bookings"
+    }
+}

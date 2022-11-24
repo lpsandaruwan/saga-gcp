@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "dependencies": {
+        "@google-cloud/firestore": "^6.4.1",
+        "@google-cloud/pubsub": "^3.2.1"
+    }
+}

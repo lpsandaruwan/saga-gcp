@@ -1,0 +1,130 @@
+{
+    "name": "reservations",
+    "project_id": "alert-ground-366317",
+    "description": "<description>",
+    "default_location": "asia-east2",
+    "version": "0.1.0",
+    "templates": {
+        "nodejs/http": "templates/nodejs/http",
+        "nodejs/pubsub": "templates/nodejs/pubsub"
+    },
+    "services": {
+        "transits": {
+            "name": "transits",
+            "description": "<description>",
+            "source_dir": "src/transits",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "http",
+            "checksum": "",
+            "allow_all": false
+        },
+        "reservations": {
+            "name": "reservations",
+            "description": "<description>",
+            "source_dir": "src/reservations",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "http",
+            "checksum": "",
+            "allow_all": false
+        },
+        "reservationCompletions": {
+            "name": "reservationCompletions",
+            "description": "<description>",
+            "source_dir": "src/reservationCompletions",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        },
+        "reservationCancellations": {
+            "name": "reservationCancellations",
+            "description": "<description>",
+            "source_dir": "src/reservationCancellations",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        },
+        "payments": {
+            "name": "payments",
+            "description": "<description>",
+            "source_dir": "src/payments",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        },
+        "notifications": {
+            "name": "notifications",
+            "description": "<description>",
+            "source_dir": "src/notifications",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        },
+        "bookings": {
+            "name": "bookings",
+            "description": "<description>",
+            "source_dir": "src/bookings",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        },
+        "bookingCompletions": {
+            "name": "bookingCompletions",
+            "description": "<description>",
+            "source_dir": "src/bookingCompletions",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        },
+        "bookingCancellations": {
+            "name": "bookingCancellations",
+            "description": "<description>",
+            "source_dir": "src/bookingCancellations",
+            "source_archive": "",
+            "location_name": "projects/alert-ground-366317/locations/asia-east2",
+            "location_id": "asia-east2",
+            "version": "0.1.0",
+            "env": "nodejs",
+            "trigger": "pubsub",
+            "checksum": "",
+            "allow_all": false
+        }
+    }
+}
